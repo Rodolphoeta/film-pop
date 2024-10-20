@@ -1,116 +1,212 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  width: 100%; /* Largura total da tela */
+  position: fixed; /* Fixa o header no topo da página */
+  top: 0; /* Garante que o header fique no topo */
+  left: 0; /* Alinha o header à borda esquerda */
+  right: 0; /* Alinha o header à borda direita */
+  margin: 0; /* Remove margens */
+  padding: 10px 20px; /* Padding interno para espaçamento dos itens */
+  z-index: 1000; /* Mantém o header acima de outros elementos */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.login-section {
+  font-size: 1rem;
+}
+
+.login-link {
+  cursor: pointer;
+  color: white;
+  padding: 10px 80px;
+  font-size: 25px;
+}
+
+.login-link:hover {
+  color: #ccc;
+}
+
+.username {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+}
+
+.logout-icon {
+  margin-left: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.logout-icon:hover {
+  color: #ff4d4d; /* Cor de destaque ao passar o mouse */
+}
+
+/* Estilo para ajustar o conteúdo abaixo do header */
+.app-container {
+  margin-top: 60px; /* Compensa a altura do header fixo para que o conteúdo não fique escondido atrás dele */
+}
+
+/* Outros estilos existentes... */
+
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.app-container {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main content */
+.main-content {
+  margin-bottom: 20px;
+}
+
+.section-main {
+  margin-bottom: 20px;
+}
+
+.main-content h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.main-content p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Movie Cards */
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 200px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.movie-info {
+  padding: 10px;
+  text-align: left;
+}
+
+.movie-info h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.movie-info p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media (min-width: 576px) {
+  .movie-card {
+    width: 250px;
   }
-  
-  .app-container {
-    padding: 20px;
-    text-align: center;
+
+  .movie-info h3 {
+    font-size: 1.4rem;
   }
-  
-  /* Main content */
-  .main-content {
-    margin-bottom: 20px;
+
+  .movie-info p {
+    font-size: 1rem;
   }
-  
-  .section-main {
-    margin-bottom: 20px;
-  }
-  
-  .main-content h2 {
-    font-size: 2rem;
-    color: #333;
-  }
-  
-  .main-content p {
-    font-size: 1.2rem;
-    color: #555;
-  }
-  
-  /* Movie Cards */
+}
+
+@media (min-width: 768px) {
   .movies-container {
-    display: flex;
-    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1200px) {
+  .movies-container {
     justify-content: center;
   }
-  
+
   .movie-card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    width: 200px;
-    overflow: hidden;
-    transition: transform 0.3s;
+    width: 300px;
   }
-  
-  .movie-card:hover {
-    transform: scale(1.05);
-  }
-  
+
   .movie-image {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+    height: 400px;
   }
-  
-  .movie-info {
-    padding: 10px;
-    text-align: left;
-  }
-  
+
   .movie-info h3 {
-    font-size: 1.2rem;
-    margin: 10px 0;
+    font-size: 1.6rem;
   }
-  
+
   .movie-info p {
-    font-size: 0.9rem;
-    color: #666;
-    margin: 5px 0;
+    font-size: 1.1rem;
   }
-  
-  /* Responsive Styles */
-  @media (min-width: 576px) {
-    .movie-card {
-      width: 250px;
-    }
-  
-    .movie-info h3 {
-      font-size: 1.4rem;
-    }
-  
-    .movie-info p {
-      font-size: 1rem;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .movies-container {
-      justify-content: space-around;
-    }
-  }
-  
-  @media (min-width: 1200px) {
-    .movies-container {
-      justify-content: center;
-    }
-  
-    .movie-card {
-      width: 300px;
-    }
-  
-    .movie-image {
-      height: 400px;
-    }
-  
-    .movie-info h3 {
-      font-size: 1.6rem;
-    }
-  
-    .movie-info p {
-      font-size: 1.1rem;
-    }
-  }
-  
+}
+
+.wrapper {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.form-signin {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.form-signin-heading {
+  margin-bottom: 30px;
+}
+
+.form-control {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-control:focus {
+  z-index: 2;
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+body {
+  background: #eee !important;
+}
