@@ -1,4 +1,3 @@
-import React from "react";
 import FetchData from "./components/FetchData";
 import Movies from "./components/Movies";
 import "./styles.css";

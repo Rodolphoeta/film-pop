@@ -3,7 +3,8 @@ import React, { useEffect, useState } from "react";
 const FetchData = () => {
     const [movies, setMovies] = useState([]); // Estado para armazenar os filmes
     const [loading, setLoading] = useState(true); // Estado para controle de carregamento
-    const apiKey = process.env.MOVIE_API_PRIVATE_KEY
+    const apiKey = import.meta.env.VITE_MOVIE_API_PRIVATE_KEY
+    console.log(apiKey)
     
     const options = {
         method: "GET",
@@ -33,7 +34,7 @@ const FetchData = () => {
 
     return (
         <div className="movies-container">
-        {movies.map((movie) => (
+        {movies? movies.map((movie) => (
             <div key={movie.id} className="movie-card">
             <img
                 src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
@@ -47,7 +48,8 @@ const FetchData = () => {
                 <p>{movie.overview}</p>
             </div>
             </div>
-        ))}
+        )) : ""
+    }
         </div>
     );
     };
