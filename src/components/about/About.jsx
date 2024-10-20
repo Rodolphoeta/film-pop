@@ -1,6 +1,6 @@
 import React from "react";
 
-function Movies() {
+function About() {
   return (
     <main className="main-content">
       <section className="section-main">
@@ -16,4 +16,4 @@ function Movies() {
   );
 }
 
-export default Movies;
+export default About;
