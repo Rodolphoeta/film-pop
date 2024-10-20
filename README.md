@@ -3,7 +3,6 @@ film pop é um projeto de catalogo de filmes utilizando a API do The Movie Datab
 
 ## Como rodar o projeto
 Instale as dependencias : `npm i`
-Instale material ui: `npm install @mui/icons-material @mui/material @emotion/styled @emotion/react`
 Rode o programs `npm run dev`
 
 ### Creditos

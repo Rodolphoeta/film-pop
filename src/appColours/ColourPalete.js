@@ -1,7 +1,7 @@
 const A = {
 	primary: 'var(--primary)',
 	secondary: 'var(--secondary)',
-	secondary: 'var(--terciary)',
+	terciary: 'var(--terciary)',
 	highlight: 'var(--highlight)',
 	text:'var(--txtPrimary)',
 	textSecondary: 'var(--txtSecondary)',

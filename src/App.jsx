@@ -1,8 +1,4 @@
 import React, { useState } from "react";
-import FetchData from "./components/FetchData";
-import Movies from "./components/Movies";
-import Login from "./components/Login";
-import Header from "./components/Header";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Pallete from "./appColours/ColourPalete";
 import style from "./appColours/themes.module.css";
