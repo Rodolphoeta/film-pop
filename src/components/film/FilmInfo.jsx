@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ApiService from "../../Services/ApiService";
+import ApiService from "../../services/ApiService";
 
 export default function FilmInfo(props) {
   const movie = props.data;

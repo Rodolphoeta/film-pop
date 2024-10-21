@@ -1,4 +1,4 @@
-import colors from "../../AppColours/ColourPalete";
+import colors from "../../appColours/ColourPalete";
 export default function ControlBar(props) {
   return (
      <div style={barStyle}>{props.children}</div>

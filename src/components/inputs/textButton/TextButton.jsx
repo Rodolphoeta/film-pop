@@ -1,4 +1,4 @@
-import colors from "../../../AppColours/ColourPalete";
+import colors from "../../../appColours/ColourPalete";
 import React from "react";
 
 export default function TextButton(props) {

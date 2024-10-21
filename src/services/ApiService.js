@@ -25,8 +25,8 @@ class _APIService {
 
   // metodo HTTP GET
   async get(route, query = this.defaultParams) {
-    let q = this._query_string_from_obj(query);
-    const path = `${this.baseUrl}/${route}${q}`;
+    let queryString = this._query_string_from_obj(query);
+    const path = `${this.baseUrl}/${route}${queryString}`;
     console.log(path)
     try {
       const response = await this._request(path);

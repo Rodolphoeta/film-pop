@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import ApiService from "../../Services/ApiService";
+import ApiService from "../../services/ApiService";
 import { transform } from "typescript";
 
 export default function FilmThumbnail(props) {
