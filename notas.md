@@ -19,3 +19,5 @@ ctrl + click no servidor (link) Local
 - Ao criar componentes e realizar alterações, ir na aba **Source controls** antes de dar commit, para alterar de **changes** para **stage changes**
 - Se aparecer um erro falando que user.name e user .email não estão configurados, rodar os seguintes comandos `git config --local user.name rodolpho.rodrigues` e
   `git config --local user.email rodolphoeta@gmail.com`
+
+  Após realizar alterações e fazer o commit, precisamos subit para o git, nas setinhas do lado esquerdo na parte inferior
